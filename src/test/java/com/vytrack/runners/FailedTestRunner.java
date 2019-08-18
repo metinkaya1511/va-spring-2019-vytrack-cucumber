@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
         glue = "com/vytrack/step_definitions",
 
         plugin = {"html:target/default-cucumber-reports",
-                "json:target/cucumber.json",
+                "json:target/cucumber2.json",
         }
 
 )
