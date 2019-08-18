@@ -8,6 +8,8 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.junit.Assert;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class LogoutStepDefs {
     @Given("I login as a {string}")
@@ -40,9 +42,8 @@ public class LogoutStepDefs {
 
     @Then("the page title should be {string}")
     public void the_page_title_should_be(String expectedTitle) {
-        // TODO change to explicit wait
-        String actual = Driver.get().getTitle();
-        Assert.assertEquals(expectedTitle, actual);
+        WebDriverWait wait = new WebDriverWait(Driver.get(), 5);
+        Assert.assertTrue(wait.until(ExpectedConditions.titleIs(expectedTitle)));
     }
 
 }
