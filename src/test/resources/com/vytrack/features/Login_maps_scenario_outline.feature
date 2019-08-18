@@ -13,4 +13,3 @@ Feature: Login as different people using maps
       | salesmanager101 | UserUser123 |
       | salesmanager102 | UserUser123 |
       | salesmanager103 | UserUser123 |
-
