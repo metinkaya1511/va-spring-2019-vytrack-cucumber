@@ -1,6 +1,5 @@
 Feature: Navigation menu options
 
-  @wip
   Scenario Outline: verify page titles
     Given I login as a "<user>"
     When I navigate to "<tab>" "<module>"
@@ -8,7 +7,7 @@ Feature: Navigation menu options
 
     Examples: drivers
       | user   | tab        | module          | title                                                        |
-      | driver | Fleet      | Vehicles        | Car - Entities - System - Car - Entities - System            |
+      | driver | Fleet      | Vehicles        |              |
       | driver | Fleet      | Vehicles Model  | Vehicles Model - Entities - System - Car - Entities - System |
       | driver | Customers  | Accounts        | Accounts - Customers                                         |
       | driver | Customers  | Contacts        | Contacts - Customers                                         |

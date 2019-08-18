@@ -27,8 +27,3 @@ Scenario Outline: Login as different users again
 
 
 
-
-
-
-
-
